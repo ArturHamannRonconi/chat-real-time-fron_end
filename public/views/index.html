@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='../libs/Bootstrap/bootstrap.min.css'>
+    <link rel='stylesheet' href='../assets/css/client.css'>
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div class='container'>
+      <div class='chat bg-dark p-5'></div>
+      <div class='mb-3'>
+        <label for='email-form' class='form-label'>Email address</label>
+        <input type='email' class='form-control' id='email-form' placeholder='name@example.com'>
+      </div>
+      <div class='mb-3'>
+        <label for='message-form' class='form-label'>Example textarea</label>
+        <textarea class='form-control' id='message-form' rows='3'></textarea>
+      </div>
+      <div class="d-grid gap-2 ">
+        <button type="button" class="buttonSend btn btn-outline-info">Send</button>
+      </div>
+    </div>
+
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src='../libs/jQuery/jquery.js'></script>
+    <script src='../libs/Bootstrap/bootstrap.bundle.min.js'></script>
+    
+    <script type='module' src='../assets/js/components.js'></script>
+    <script type='module' src='../assets/js/connection.js'></script>
+    <script type='module' src='../assets/js/client.js'></script>
+  </body>
+</html>
